@@ -1,0 +1,24 @@
+{
+    "name": "tystuyfzand/seaweedfs-client",
+    "description": "A SeaweedFS implementation for PHP based on Guzzle",
+    "type": "library",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Tyler Stuyfzand",
+            "email": "tyler@tystuyfzand.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.0|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SeaweedFS\\": "src/"
+        }
+    },
+    "suggest": {
+        "predis/predis": "Enables caching for volumes and metadata using redis.",
+        "ext-memcached": "Enables caching for volumes and metadata using memcached."
+    }
+}
